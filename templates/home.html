@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat API Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        p {
+            color: #555;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .endpoint {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Chat API Documentation</h1>
+    <p>Welcome to the Chat API documentation. This API allows you to create chat rooms, send messages, and interact with chat rooms using both REST API and WebSockets.</p>
+    
+    <h2>REST API Endpoints</h2>
+    <div class="endpoint">
+        <h3>List and Create Chat Rooms</h3>
+        <p><strong>GET / POST</strong> <code>/chat/api/rooms/</code></p>
+        <p>Retrieve a list of chat rooms or create a new chat room.</p>
+    </div>
+    <div class="endpoint">
+        <h3>List and Create Messages</h3>
+        <p><strong>GET / POST</strong> <code>/chat/api/messages/</code></p>
+        <p>Retrieve a list of messages or send a new message.</p>
+    </div>
+    
+    <h2>WebSocket Endpoint</h2>
+    <div class="endpoint">
+        <h3>Connect to a Chat Room</h3>
+        <p><strong>WebSocket</strong> <code>/ws/chat/&lt;room_name&gt;/</code></p>
+        <p>Connect to a chat room and send/receive messages in real-time.</p>
+    </div>
+
+    <h2>Swagger Documentation</h2>
+    <p>For detailed REST API documentation, visit the <a href="/redoc/">Swagger UI</a>.</p>
+</body>
+</html>
